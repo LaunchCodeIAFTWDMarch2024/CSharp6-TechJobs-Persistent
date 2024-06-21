@@ -4,6 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>c4605103-c535-4260-be90-375258c517a8</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -16,6 +17,7 @@
     <None Remove="Views\Skill\" />
     <None Remove="Views\Job\" />
   </ItemGroup>
+
   <ItemGroup>
     <Folder Include="Data\" />
     <Folder Include="ViewModels\" />
@@ -23,7 +25,9 @@
     <Folder Include="Views\Skill\" />
     <Folder Include="Views\Job\" />
   </ItemGroup>
+
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.15" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.15" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.15">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -31,4 +35,5 @@
     </PackageReference>
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.2" />
   </ItemGroup>
+
 </Project>
